@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript with Chart.js</title>
+    <style>
+        body {
+        background: rgb(217, 213, 221);
+        justify-content: center;
+        
+        }
+        .hidden {
+            display: none;
+        }
+        .highlight {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Basics with Chart.js</h1>
+
+    <div>
+        <label for="number1">Number 1:</label>
+        <input type="number" id="number1">
+    </div>
+
+    <div>
+        <label for="number2">Number 2:</label>
+        <input type="number" id="number2">
+    </div>
+
+    <button id="addButton">Add</button>
+    <button id="subtractButton">Subtract</button>
+    <button id="multiplyButton">Multiply</button>
+    <button id="divideButton">Divide</button>
+
+    <div id="result" class="hidden">Result: <span id="resultValue"></span></div>
+
+    <!-- Canvas element for Chart.js -->
+    <canvas id="myChart" width="400" height="200"></canvas>
+
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Script.js"></script>
+</body>
+</html>
+
